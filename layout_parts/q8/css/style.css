@@ -1,5 +1,268 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.common {
+  background-color: #00bcd4;
+  color: #fff;
+}
 
+.error {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+.disabled {
+  background-color: #e5e5e5;
+  color: #fff;
+}
+
+.shadow {
+  box-shadow: 0 1px 6px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.12);
+  color: #222;
+}
+
+.s-btn {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 16px;
+  height: 26px;
+  line-height: 26px;
+  margin: 5px;
+  padding: 0 15px;
+}
+
+.m-btn {
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 20px;
+  height: 32px;
+  line-height: 32px;
+  margin: 5px;
+  padding: 0 20px;
+}
+
+.l-btn {
+  border-radius: 7px;
+  display: inline-block;
+  font-size: 24px;
+  height: 38px;
+  line-height: 38px;
+  margin: 5px;
+  padding: 0 25px;
+}
+
+/* ここまでボタン
+
+ここからフォーム */
+
+.q8__form {
+  background-color: #ecf1f2;
+  margin: 0 auto;
+  padding: 20px;
+  width: 700px;
+}
+
+.q8__form__title {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.q8__form__title:before {
+  background-color: #ccc;
+  content: "";
+  display: #ccc;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.q8__title__text {
+  background-color: #ecf1f2;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 10px;
+  position: relative;
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.q8__main {
+  float: left;
+  width: 300px;
+}
+
+.q8__main__items {
+  margin-bottom: 20px;
+}
+
+.q8__main__items li {
+  margin-top: 20px;
+}
+
+.q8__main__items li:first-child {
+  margin-top: 0;
+}
+
+.q8__main__items__title {
+  float: left;
+  line-height: 25px;
+  text-align: right;
+  width: 100px;
+}
+
+.required {
+  color: #f22;
+}
+
+.q8__main__items__content {
+  float: right;
+  width: 180px;
+}
+
+.q8__main__items__text {
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.q8__main__items__text:focus {
+  box-shadow: 0 0 6px #00bcd4;
+}
+
+.q8__main__items__radio {
+  display: none;
+}
+
+.q8__radio__text {
+  padding: 3px 3px 3px 20px;
+  position: relative;
+}
+
+.q8__radio__text:before {
+  background-color: #fff;
+  border: solid 1px #ccc;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 14px;
+  left: 0;
+  position: absolute;
+  width: 14px;
+}
+
+.q8__radio__text:after {
+  background-color: #00bcd4;
+  border-radius: 50%;
+  content: "";
+  display: none;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 7px;
+  width: 10px;
+}
+
+input[type=radio]:checked + .q8__radio__text:after {
+  display: inline-block;
+}
+
+.q8__main__items__select {
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.q8__main__checkbox {
+  display: none;
+}
+
+.q8__main__checkbox__text {
+  display: inline-block;
+  float: right;
+  padding-left: 24px;
+  position: relative;
+}
+
+.q8__main__checkbox__text:before {
+  background-color: #fff;
+  border: solid 1px #ccc;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  width: 16px;
+}
+
+.q8__main__checkbox__text:after {
+  border-bottom: solid 3px #00bcd4;
+  border-right: solid 3px #00bcd4;
+  content: "";
+  display: none;
+  left: 6px;
+  margin-top: -14px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 8px;
+}
+
+input[type=checkbox]:checked + .q8__main__checkbox__text:after {
+  display: inline-block;
+}
+
+.q8__main__button {
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  line-height: 26px;
+  outline: none;
+  padding: 0 10px;
+}
+
+.q8__main__button:active {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #00bcd4;
+}
+
+.q8__side {
+  float: right;
+  width: 380px;
+}
+
+.q8__side__input {
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 203px;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+.q8__side__input:focus {
+  box-shadow: 0 0 6px #00bcd4;
+}
 /* 回答はここに書いてね */
