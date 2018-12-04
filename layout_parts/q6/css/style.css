@@ -7,8 +7,9 @@
 
 .text1-1 {
   background-color: #e6f2ff;
+  box-sizing: border-box;
   display: inline-block;
-  padding: 10px 0px;
+  padding: 10px;
   width: 90px;
 }
 
@@ -20,12 +21,14 @@
   width: 90px;
 }
 
+.around2-1 {
+  display: table;
+}
+
 .box2-1 {
   display: table-cell;
-  height: 200px;
   text-align: center;
   vertical-align: middle;
-  width: 300px;
 }
 
 .text2-1 {

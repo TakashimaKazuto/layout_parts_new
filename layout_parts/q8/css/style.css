@@ -110,7 +110,7 @@
   margin-top: 0;
 }
 
-.q8__main__items__title {
+.q8__items__title {
   float: left;
   line-height: 25px;
   text-align: right;
@@ -121,12 +121,12 @@
   color: #f22;
 }
 
-.q8__main__items__content {
+.q8__items__content {
   float: right;
   width: 180px;
 }
 
-.q8__main__items__text {
+.q8__text {
   border: none;
   border-radius: 3px;
   box-sizing: border-box;
@@ -135,11 +135,11 @@
   width: 100%;
 }
 
-.q8__main__items__text:focus {
+.q8__text:focus {
   box-shadow: 0 0 6px #00bcd4;
 }
 
-.q8__main__items__radio {
+.q8__radio {
   display: none;
 }
 
@@ -176,7 +176,10 @@ input[type=radio]:checked + .q8__radio__text:after {
   display: inline-block;
 }
 
-.q8__main__items__select {
+.q8__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: none;
   border-radius: 3px;
   box-sizing: border-box;
@@ -186,7 +189,25 @@ input[type=radio]:checked + .q8__radio__text:after {
   width: 100%;
 }
 
-.q8__main__checkbox {
+.q8__select__label {
+  position: relative;
+}
+
+.q8__select__label:after {
+  border-bottom: solid 3px #ecf1f2;
+  border-right: solid 3px #ecf1f2;
+  content: "";
+  display: block;
+  height: 10px;
+  margin-top: -8px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 10px;
+}
+
+.q8__checkbox {
   display: none;
 }
 
@@ -208,7 +229,7 @@ input[type=radio]:checked + .q8__radio__text:after {
   width: 16px;
 }
 
-.q8__main__checkbox__text:after {
+.q8__checkbox__text:after {
   border-bottom: solid 3px #00bcd4;
   border-right: solid 3px #00bcd4;
   content: "";
@@ -222,11 +243,11 @@ input[type=radio]:checked + .q8__radio__text:after {
   width: 8px;
 }
 
-input[type=checkbox]:checked + .q8__main__checkbox__text:after {
+input[type=checkbox]:checked + .q8__checkbox__text:after {
   display: inline-block;
 }
 
-.q8__main__button {
+.q8__button {
   background-color: #00bcd4;
   border: none;
   border-radius: 5px;
@@ -239,7 +260,7 @@ input[type=checkbox]:checked + .q8__main__checkbox__text:after {
   padding: 0 10px;
 }
 
-.q8__main__button:active {
+.q8__button:active {
   background-color: #fff;
   border: none;
   border-radius: 5px;
@@ -251,7 +272,7 @@ input[type=checkbox]:checked + .q8__main__checkbox__text:after {
   width: 380px;
 }
 
-.q8__side__input {
+.q8__textarea {
   border: none;
   border-radius: 3px;
   box-sizing: border-box;
@@ -262,7 +283,7 @@ input[type=checkbox]:checked + .q8__main__checkbox__text:after {
   width: 100%;
 }
 
-.q8__side__input:focus {
+.q8__textarea:focus {
   box-shadow: 0 0 6px #00bcd4;
 }
 /* 回答はここに書いてね */
