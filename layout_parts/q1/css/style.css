@@ -21,8 +21,8 @@
   padding: 20px;
 }
 
-.main-box:first-child {
-  margin-left: none;
+.main .main-box:first-child {
+  margin-left: 0;
 }
 
 .sentence-area {

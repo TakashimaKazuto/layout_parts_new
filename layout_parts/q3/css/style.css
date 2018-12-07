@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.header {
+.meal th {
   background: #2244aa;
   border: solid #dedede 1px;
   color: #fff;
@@ -16,18 +16,18 @@
   padding: 10px;
 }
 
-.data {
+.meal td {
   border: solid #dedede 1px;
   font-size: 16px;
   line-height: 22px;
   padding: 10px;
 }
 
-.row:nth-child(odd) {
+.meal tr:nth-child(odd) {
   background: #ecf1f2;
 }
 
-.row:last-child {
+.meal tr:last-child {
   border-top: dashed #000 2px;
 }
 /* 回答はここに書いてね */
